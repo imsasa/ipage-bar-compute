@@ -1,0 +1,35 @@
+{
+  "name"           : "ipagebarcompute",
+  "version"        : "1.0.0",
+  "description"    : "计算翻页组件底部页码",
+  "main"           : "./src/index.js",
+  "scripts"        : {
+    "clean"     : "rimraf dist",
+    "test"      : "mocha ./tests/indexOf.js",
+    "gendoc"    : "jsdoc -c jsdoc.conf.json",
+    "test:nyc"  : "cross-env NODE_ENV=test nyc mocha --require @babel/register --reporter mochawesome --ui bdd ./tests/index.js",
+    "test:mocha": "mocha --require @babel/register --ui bdd ./tests/index.js"
+  },
+  "repository"     : {
+    "type": "git",
+    "url" : "git+https://github.com/imsasa/ipageBarCompute.git"
+  },
+  "author"         : "",
+  "license"        : "ISC",
+  "bugs"           : {
+    "url": "https://github.com/imsasa/ipageBarCompute/issues"
+  },
+  "homepage"       : "https://github.com/imsasa/ipageBarCompute#readme",
+  "devDependencies": {
+    "@babel/core"          : "^7.6.0",
+    "@babel/preset-env"    : "^7.6.0",
+    "@babel/register"      : "^7.6.0",
+    "babel-plugin-istanbul": "^5.2.0",
+    "cross-env"            : "^5.2.0",
+    "istanbul"             : "^0.4.5",
+    "jsdoc"                : "^3.6.3",
+    "mocha"                : "^4.0.1",
+    "mochawesome"          : "^4.1.0",
+    "nyc"                  : "^13.3.0"
+  }
+}
