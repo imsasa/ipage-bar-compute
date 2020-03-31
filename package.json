@@ -1,6 +1,6 @@
 {
   "name"           : "ipagebarcompute",
-  "version"        : "1.0.0",
+  "version"        : "1.0.1",
   "description"    : "计算翻页组件底部页码",
   "main"           : "./src/index.js",
   "scripts"        : {

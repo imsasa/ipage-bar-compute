@@ -17,10 +17,10 @@ class Pages {
      */
     getPageViewable(page) {
         let ret = [page];
-        page || (page = this.currentPage);
+        page===undefined?page = this.currentPage:this.currentPage=page;
         let pages = this.pages;
         let size  = this.size;
-        for (let i = 1; ret.length < size && ret.length <= pages; i++) {
+        for (let i = 1; ret.length < size && ret.length < pages; i++) {
             let pre = page - i;
             pre > 0 && ret.unshift(pre);
             if(ret.length<size){
